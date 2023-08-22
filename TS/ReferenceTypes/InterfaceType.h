@@ -4,9 +4,9 @@
 
 #ifndef JET_INTERFACETYPE_H
 #define JET_INTERFACETYPE_H
-#include "../../Core/Def.h"
+#include "stdint.h"
 
 struct InterfaceType {
-    Pointer Data;
+    uint64_t Data;
 };
 #endif //JET_INTERFACETYPE_H

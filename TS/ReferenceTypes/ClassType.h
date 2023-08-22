@@ -4,9 +4,9 @@
 
 #ifndef JET_CLASSTYPE_H
 #define JET_CLASSTYPE_H
-#include "../../Core/Def.h"
+#include "stdint.h"
 
 struct ClassType {
-    Pointer Data;
+    uint64_t Data;
 };
 #endif //JET_CLASSTYPE_H

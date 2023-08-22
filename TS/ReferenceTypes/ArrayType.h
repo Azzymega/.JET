@@ -4,9 +4,9 @@
 
 #ifndef JET_ARRAYTYPE_H
 #define JET_ARRAYTYPE_H
-#include "../../Core/Def.h"
+#include "stdint.h"
 
 struct ArrayType {
-    Pointer Data;
+    uint64_t Data;
 };
 #endif //JET_ARRAYTYPE_H

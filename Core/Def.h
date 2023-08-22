@@ -10,7 +10,16 @@
 typedef uint64_t AInteger;
 typedef uint64_t Pointer;
 
-enum Types {
+#define VMStackSize 500
+#define NativeStackSize 900
+
+enum HeapTypes {
+    Class,
+    Interface,
+    Array
+};
+
+enum PrimitiveTypes {
     Byte,
     Short,
     Int,
