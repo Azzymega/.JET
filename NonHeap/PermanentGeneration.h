@@ -7,6 +7,6 @@
 #include "ConstantPool.h"
 
 struct PermanentGeneration {
-    struct ConstantPool CPool;
+
 };
 #endif //JET_PERMANENTGENERATION_H

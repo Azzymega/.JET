@@ -7,13 +7,14 @@
 
 #include "LCVariablesList.h"
 #include "OperandStack.h"
-#include "../NonHeap/ConstantPool.h"
+#include "../NonHeap/Class.h"
 
 struct Frame {
     struct LCTypes ReturnValue;
+    int InstructionPointer;
     int LCLength;
     struct LCVariableList* Locals;
     struct OperandStack OperandStack;
-    struct ConstantPool* CurrentClassConstantPoolReference;
+    struct Class* CurrentClass;
 };
 #endif //JET_FRAME_H
