@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.25)
 project(JET)
 set(CMAKE_CXX_FLAGS -static-libgcc)
 set(CMAKE_CXX_FLAGS -static-libstdc++)
+set(CMAKE_CXX_FLAGS -static-libstdc)
 set(CMAKE_CXX_FLAGS -Wall)
 set(CMAKE_CXX_STANDARD 17)
 set ( CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON )
@@ -17,6 +18,6 @@ add_executable(JET main.cpp Core/Thread.c Core/Thread.h Core/Def.h Core/ThreadSt
         TS/PrimitiveTypes/IntegerTypes/Boolean.h TS/PrimitiveTypes/IntegerTypes/ReturnAddress.c
         TS/PrimitiveTypes/IntegerTypes/ReturnAddress.h TS/ReferenceTypes/ClassType.c TS/ReferenceTypes/ClassType.h
         TS/ReferenceTypes/ArrayType.c TS/ReferenceTypes/ArrayType.h TS/ReferenceTypes/InterfaceType.c
-        TS/ReferenceTypes/InterfaceType.h Core/Frame.c Core/Frame.h Core/NativeStack.c Core/NativeStack.h
-        Heap/Heap.c Heap/Heap.h Heap/HeapChunk.c Heap/HeapChunk.h NonHeap/PermanentGeneration.cpp
-        NonHeap/PermanentGeneration.h NonHeap/PermanentGeneration.cpp NonHeap/MethodArea.cpp NonHeap/MethodArea.h NonHeap/Object.cpp NonHeap/Object.h NonHeap/ConstantPool.cpp NonHeap/ConstantPool.h)
+        TS/ReferenceTypes/InterfaceType.h Frames/Frame.c Frames/Frame.h Core/NativeStack.c Core/NativeStack.h
+        Heap/Heap.c Heap/Heap.h Heap/HeapChunk.c Heap/HeapChunk.h
+        Core/JET.c Core/JET.h Frames/FrameStack.c Frames/FrameStack.h Frames/LCTypes.c Frames/LCTypes.h Frames/LCTypes.h Frames/LCVariablesList.c Frames/LCVariablesList.h Frames/OperandStack.c Frames/OperandStack.h NonHeap/PermanentGeneration.c NonHeap/PermanentGeneration.h NonHeap/ConstantPool.c NonHeap/ConstantPool.h NonHeap/CPoolMember.c NonHeap/CPoolMember.h)

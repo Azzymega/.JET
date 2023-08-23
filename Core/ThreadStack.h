@@ -4,8 +4,8 @@
 
 #ifndef JET_THREADSTACK_H
 #define JET_THREADSTACK_H
-
-#include "Frame.h"
+#include "../Frames/Frame.h"
+#include "ThreadStack.h"
 #include "Def.h"
 
 struct ThreadStack {

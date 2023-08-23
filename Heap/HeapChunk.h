@@ -10,7 +10,7 @@
 struct HeapChunk {
     struct HeapChunck* NextChunk;
     AInteger ChunkSize;
-    enum HeapTypes CurrentType;
+    enum Types CurrentType;
     Pointer* Data;
 };
 #endif //JET_HEAPCHUNK_H

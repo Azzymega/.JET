@@ -1,14 +1,12 @@
 //
-// Created by Danil on 22.08.2023.
+// Created by Danil on 23.08.2023.
 //
 
 #ifndef JET_PERMANENTGENERATION_H
 #define JET_PERMANENTGENERATION_H
+#include "ConstantPool.h"
 
-
-class PermanentGeneration {
-
+struct PermanentGeneration {
+    struct ConstantPool CPool;
 };
-
-
 #endif //JET_PERMANENTGENERATION_H

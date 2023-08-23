@@ -6,8 +6,12 @@
 #define JET_THREAD_H
 
 #include "Def.h"
+#include "../Frames/FrameStack.h"
+#include "NativeStack.h"
 
 struct Thread {
     AInteger ProgramCounter;
+    struct FrameStack Stack;
+    struct NativeStack NStack;
 };
 #endif //JET_THREAD_H
