@@ -8,9 +8,10 @@
 #include "AttributeList.h"
 
 struct Field {
-    int Flags;
-    wchar_t* Name;
-    wchar_t* Descriptor;
+    uint16_t Flags;
+    uint16_t NameIndex;
+    uint16_t DescriptorIndex;
+    uint16_t AttributeIndex;
     struct AttributeList* AttributeList;
 };
 #endif //JET_FIELD_H
