@@ -6,12 +6,12 @@
 #define JET_CONSTANTPOOL_H
 
 
+#include <vector>
 #include "CPInfo.h"
 
 struct ConstantPool{
-    int Index;
-    ConstantPool* NextPool;
-    CPInfo CCP;
+public:
+    std::vector<CPInfo> Pool;
 };
 
 

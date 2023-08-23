@@ -26,5 +26,7 @@ add_library(JET SHARED Core/Thread.c Core/Thread.h Core/Def.h Core/ThreadStack.c
         NonHeap/CPoolMember.c NonHeap/CPoolMember.h NonHeap/Field.c NonHeap/Field.h NonHeap/Attribute.c
         NonHeap/Attribute.h NonHeap/AttributeList.c NonHeap/AttributeList.h NonHeap/Class.c NonHeap/Class.h
         Core/StringArray.c Core/StringArray.h NonHeap/FieldArray.c NonHeap/FieldArray.h)
-add_executable(ClassLoader Loader/Loader.cpp Loader/Loader.h main.cpp Loader/ClassFile.cpp Loader/ClassFile.h Loader/ConstantPool.cpp Loader/ConstantPool.h Loader/CPInfo.cpp Loader/CPInfo.h)
+add_executable(ClassLoader Loader/Loader.cpp Loader/Loader.h Loader/Main.cpp Loader/ClassFile.cpp
+        Loader/ClassFile.h Loader/ConstantPool.cpp Loader/ConstantPool.h Loader/CPInfo.cpp Loader/CPInfo.h
+        Loader/Main.cpp)
 target_link_libraries(ClassLoader PRIVATE JET)

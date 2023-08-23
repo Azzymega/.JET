@@ -4,10 +4,12 @@
 
 #ifndef JET_CPINFO_H
 #define JET_CPINFO_H
-#include "stdint.h"
+#include <cstdint>
+#include "../Core/Def.h"
 
 struct CPInfo{
-    uint8_t Tag;
+    ConstantPoolTags Tag;
+    int Size;
     uint8_t* Data;
 };
 
