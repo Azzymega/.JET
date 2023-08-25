@@ -1,0 +1,18 @@
+//
+// Created by Danil on 25.08.2023.
+//
+
+#ifndef JET_STACK_MAP_TABLE_ATTRIBUTE_H
+#define JET_STACK_MAP_TABLE_ATTRIBUTE_H
+
+#include "../../Core/Def.h"
+#include "../stack_map_frame.h"
+
+struct stack_map_table_attribute {
+    u2 attribute_name_index;
+    u4 attribute_length;
+    u2 number_of_entries;
+    union stack_map_frame entries[max_entries];
+};
+
+#endif //JET_STACK_MAP_TABLE_ATTRIBUTE_H
