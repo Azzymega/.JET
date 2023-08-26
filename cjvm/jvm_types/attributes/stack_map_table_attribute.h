@@ -9,8 +9,6 @@
 #include "../stack_map_frame.h"
 
 struct stack_map_table_attribute {
-    u2 attribute_name_index;
-    u4 attribute_length;
     u2 number_of_entries;
     union stack_map_frame entries[max_entries];
 };

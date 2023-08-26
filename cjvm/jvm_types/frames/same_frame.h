@@ -8,7 +8,6 @@
 #include "../../Core/Def.h"
 
 struct same_frame {
-    u1 frame_type;
 };
 
 #endif //JET_SAME_FRAME_H

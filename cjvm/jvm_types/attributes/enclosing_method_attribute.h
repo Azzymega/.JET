@@ -8,8 +8,6 @@
 #include "../../Core/Def.h"
 
 struct enclosing_method_attribute {
-    u2 attribute_name_index;
-    u4 attribute_length;
     u2 class_index;
     u2 method_index;
 };

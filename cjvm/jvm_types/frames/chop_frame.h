@@ -8,7 +8,6 @@
 #include "../../Core/Def.h"
 
 struct chop_frame {
-    u1 frame_type;
     u2 offset_delta;
 };
 

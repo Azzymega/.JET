@@ -9,8 +9,6 @@
 #include "../local_variable_table.h"
 
 struct local_variable_table_attribute {
-    u2 attribute_name_index;
-    u4 attribute_length;
     u2 local_variable_table_length;
     struct local_variable_table local_variable_table[max_local_variable_table_length];
 };

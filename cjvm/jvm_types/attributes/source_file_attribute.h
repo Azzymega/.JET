@@ -8,8 +8,6 @@
 #include "../../Core/Def.h"
 
 struct source_file_attribute {
-    u2 attribute_name_index;
-    u4 attribute_length;
     u2 sourcefile_index;
 };
 

@@ -5,9 +5,9 @@
 #ifndef JET_CLASS_H
 #define JET_CLASS_H
 
-#include "../Core/Def.h"
+#include "../core/Def.h"
 
-struct class {
+struct classT {
     u2 inner_class_info_index;
     u2 outer_class_info_index;
     u2 inner_name_index;

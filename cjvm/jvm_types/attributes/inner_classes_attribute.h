@@ -9,10 +9,8 @@
 #include "../class.h"
 
 struct inner_classes_attribute {
-    u2 attribute_name_index;
-    u4 attribute_length;
     u2 number_of_classes;
-    struct class classes[max_class_number];
+    struct classT classes[max_class_number];
 };
 
 #endif //JET_INNER_CLASSES_ATTRIBUTE_H

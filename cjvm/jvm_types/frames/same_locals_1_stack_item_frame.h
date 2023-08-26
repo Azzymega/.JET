@@ -9,7 +9,6 @@
 #include "../var_info/verification_type_info.h"
 
 struct same_locals_1_stack_item_frame {
-    u1 frame_type;
     verification_type_info stack[1];
 };
 

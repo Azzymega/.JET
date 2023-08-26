@@ -9,8 +9,6 @@
 #include "../line_number_table.h"
 
 struct line_number_table_attribute {
-    u2 attribute_name_index;
-    u4 attribute_length;
     u2 line_number_table_length;
     struct line_number_table line_number_table[max_line_number_table_length];
 };

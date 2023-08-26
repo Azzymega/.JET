@@ -8,8 +8,6 @@
 #include "../../core/Def.h"
 
 struct source_debug_extension_attribute {
-    u2 attribute_name_index;
-    u4 attribute_length;
     u1 debug_extension[max_debug_extension];
 };
 

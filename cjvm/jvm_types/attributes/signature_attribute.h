@@ -8,8 +8,6 @@
 #include "../../Core/Def.h"
 
 struct signature_attribute {
-    u2 attribute_name_index;
-    u4 attribute_length;
     u2 signature_index;
 };
 

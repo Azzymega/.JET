@@ -7,7 +7,7 @@
 
 #include <vector>
 #include <cstdint>
-#include "../Loader/ConstantPool.h"
+#include "ConstantPool.h"
 #include "../jvm_global/Field.h"
 #include "field_info.h"
 #include "method_info.h"

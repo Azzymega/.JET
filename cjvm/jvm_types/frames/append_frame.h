@@ -9,7 +9,6 @@
 #include "../var_info/verification_type_info.h"
 
 struct append_frame {
-    u1 frame_type;
     u2 offset_delta;
     verification_type_info locals[3];
 };
