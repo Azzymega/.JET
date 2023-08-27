@@ -14,6 +14,8 @@
 
 class Loader {
 public:
+    u4 loaded;
+    std::vector<u1> Bytecode;
     explicit Loader(std::string Path);
     std::string Path;
     std::ifstream Stream;

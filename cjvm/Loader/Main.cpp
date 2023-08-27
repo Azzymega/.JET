@@ -9,7 +9,7 @@ int main() {
     //std::cin >> Path;
     Loader CurrentClassLoader = Loader("Main.class");
     CurrentClassLoader.OpenStream();
-    class_parser parser;
+    class_parser parser{};
     ClassFile* file = parser.parse_file(&CurrentClassLoader);
     return 0;
 }

@@ -10,7 +10,7 @@
 
 struct stack_map_table_attribute {
     u2 number_of_entries;
-    union stack_map_frame entries[max_entries];
+    struct stack_map_frame entries[max_entries];
 };
 
 #endif //JET_STACK_MAP_TABLE_ATTRIBUTE_H

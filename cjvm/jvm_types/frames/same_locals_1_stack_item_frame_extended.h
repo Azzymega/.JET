@@ -9,7 +9,7 @@
 
 struct same_locals_1_stack_item_frame_extended {
     u2 offset_delta;
-    verification_type_info stack[1];
+    struct verification_type_info stack[1];
 };
 
 #endif //JET_SAME_LOCALS_1_STACK_ITEM_FRAME_EXTENDED_H

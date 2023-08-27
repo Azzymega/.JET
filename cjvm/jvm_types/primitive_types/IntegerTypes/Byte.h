@@ -4,9 +4,10 @@
 
 #ifndef JET_BYTE_H
 #define JET_BYTE_H
-#include <stdint.h>
+
+#include "../../../core/Def.h"
 
 struct Byte {
-     int8_t Data;
+     u1 Data;
 };
 #endif //JET_BYTE_H

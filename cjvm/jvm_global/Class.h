@@ -7,9 +7,8 @@
 
 #include "ConstantPool.h"
 #include "stdint.h"
-#include "../Core/StringArray.h"
 #include "FieldArray.h"
-
+/*
 struct Class {
     struct ConstantPool Pool;
     wchar_t* Name;
@@ -20,4 +19,5 @@ struct Class {
     struct FieldArray Methods;
     struct AttributeList Attributes;
 };
+*/
 #endif //JET_CLASS_H

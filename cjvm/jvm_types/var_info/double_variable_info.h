@@ -8,7 +8,7 @@
 #include "../../Core/Def.h"
 
 struct double_variable_info {
-    u1 tag = ITEM_Double;
+
 };
 
 #endif //JET_DOUBLE_VARIABLE_INFO_H

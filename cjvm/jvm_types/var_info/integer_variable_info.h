@@ -8,6 +8,6 @@
 #include "../../Core/Def.h"
 
 struct integer_variable_info {
-    u1 tag = ITEM_Integer;
+
 };
 #endif //JET_INTEGER_VARIABLE_INFO_H

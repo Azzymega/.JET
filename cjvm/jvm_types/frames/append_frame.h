@@ -10,7 +10,7 @@
 
 struct append_frame {
     u2 offset_delta;
-    verification_type_info locals[3];
+    struct verification_type_info locals[3];
 };
 
 #endif //JET_APPEND_FRAME_H

@@ -8,7 +8,7 @@
 #include "../../Core/Def.h"
 
 struct uninitialized_variable_info {
-    u1 tag = ITEM_Uninitialized;
+
     u2 offset;
 };
 

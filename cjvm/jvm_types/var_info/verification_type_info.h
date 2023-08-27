@@ -5,6 +5,7 @@
 #ifndef JET_VERIFICATION_TYPE_INFO_H
 #define JET_VERIFICATION_TYPE_INFO_H
 
+#include "../../core/Def.h"
 #include "top_variable_info.h"
 #include "integer_variable_info.h"
 #include "float_variable_info.h"
@@ -15,15 +16,19 @@
 #include "object_variable_info.h"
 #include "uninitialized_variable_info.h"
 
-union verification_type_info {
-    top_variable_info top_variable_info;
-    integer_variable_info integer_variable_info;
-    float_variable_info float_variable_info;
-    long_variable_info long_variable_info;
-    double_variable_info double_variable_info;
-    null_variable_info null_variable_info;
-    uninitializedthis_variable_info uninitializedThis_variable_info;
-    object_variable_info object_variable_info;
-    uninitialized_variable_info uninitialized_variable_info;
+struct verification_type_info {
+    enum item tag;
+    union {
+        struct top_variable_info top_variable_info;
+        struct integer_variable_info integer_variable_info;
+        struct float_variable_info float_variable_info;
+        struct long_variable_info long_variable_info;
+        struct double_variable_info double_variable_info;
+        struct null_variable_info null_variable_info;
+        struct uninitializedthis_variable_info uninitializedThis_variable_info;
+        struct object_variable_info object_variable_info;
+        struct uninitialized_variable_info uninitialized_variable_info;
+    };
+
 };
 #endif //JET_VERIFICATION_TYPE_INFO_H

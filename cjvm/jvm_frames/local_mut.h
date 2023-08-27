@@ -1,9 +1,9 @@
 //
-// Created by Danil on 23.08.2023.
+// Created by Danil on 27.08.2023.
 //
 
-#ifndef JET_LCTYPES_H
-#define JET_LCTYPES_H
+#ifndef JET_LOCAL_MUT_H
+#define JET_LOCAL_MUT_H
 
 #include "../Core/Def.h"
 #include "../jvm_types/primitive_types/FloatingTypes/Double.h"
@@ -19,21 +19,23 @@
 #include "../jvm_types/reference_types/InterfaceType.h"
 
 
-struct LCTypes {
+struct local_mut {
     int Index;
-    enum Types Type;
+    Types Type;
     union {
-        struct Double Double;
-        struct Float Float;
-        struct Boolean Boolean;
+        Double Double;
+        Float Float;
+        Boolean Boolean;
         struct Byte Byte;
         struct Char Char;
         struct Int Int;
         struct Long Long;
-        struct ReturnAddress ReturnAddress;
-        struct ArrayType ArrayType;
-        struct ClassType ClassType;
-        struct InterfaceType InterfaceType;
+        ReturnAddress ReturnAddress;
+        ArrayType ArrayType;
+        ClassType ClassType;
+        InterfaceType InterfaceType;
     };
 };
-#endif //JET_LCTYPES_H
+
+
+#endif //JET_LOCAL_MUT_H

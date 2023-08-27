@@ -16,27 +16,6 @@ typedef int16_t nu2;
 typedef int32_t nu4;
 typedef int8_t nu1;
 
-#define max_local_variable_type_table_length 30
-#define max_local_variable_table_length 50
-#define max_line_number_table_length 50
-#define max_debug_extension 50
-#define max_class_number 100
-#define max_number_of_exceptions 500
-#define max_locals_count 300
-#define max_stack_count 300
-#define max_attribute_length 300
-#define max_attribute_count 100
-#define max_field_count 300
-#define max_code_length 3000
-#define max_exception_table_length 300
-#define max_methods_count 300
-#define max_interfaces_count 200
-#define ThreadsLimit 100
-#define VMStackSize 500
-#define NativeStackSize 900
-#define OperandStackSize 900
-#define max_entries 30
-
 enum frame_tags {
     SAME_S = 0,
     SAME_E = 63,

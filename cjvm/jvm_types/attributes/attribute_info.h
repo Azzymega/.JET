@@ -1,9 +1,10 @@
 //
-// Created by Danil on 25.08.2023.
+// Created by Danil on 27.08.2023.
 //
 
 #ifndef JET_ATTRIBUTE_INFO_H
 #define JET_ATTRIBUTE_INFO_H
+
 
 #include "code_attribute.h"
 #include "enclosing_method_attribute.h"
@@ -19,7 +20,7 @@
 #include "synthetic_attribute.h"
 
 struct attribute_info {
-    u1 tag;
+    attributes tag;
     u2 attribute_name_index;
     u4 attribute_length;
     union {
@@ -37,5 +38,6 @@ struct attribute_info {
         synthetic_attribute synthetic_attribute;
     };
 };
+
 
 #endif //JET_ATTRIBUTE_INFO_H

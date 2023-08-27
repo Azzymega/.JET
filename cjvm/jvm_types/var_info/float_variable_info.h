@@ -8,7 +8,7 @@
 #include "../../Core/Def.h"
 
 struct float_variable_info {
-    u1 tag = ITEM_Float;
+
 };
 
 #endif //JET_FLOAT_VARIABLE_INFO_H

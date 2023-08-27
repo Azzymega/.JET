@@ -18,6 +18,7 @@ class parser_service {
 public:
     ClassFile * InitClassFile(Loader* loader);
 private:
+    verification_type_info parse_vti(Loader* loader);
     stack_map_frame parse_frame(Loader* loader);
     attributes return_attribute_tag(std::string name);
     exception_table parse_table(Loader* loader);

@@ -8,7 +8,7 @@
 #include "../../Core/Def.h"
 
 struct object_variable_info {
-    u1 tag = ITEM_Object;
+
     u2 cpool_index;
 };
 
